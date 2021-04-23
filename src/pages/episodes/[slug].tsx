@@ -2,7 +2,6 @@ import { format, parseISO } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import { api } from "../../services/api";
 import { convertDurationToTimeString } from "../../utils/convertDurationToTimeString";
@@ -26,7 +25,6 @@ type EpisodeProps = {
 };
 
 export default function Episode({ episode }: EpisodeProps) {
-  const router = useRouter();
   return (
     <div className={styles.episode}>
       <div className={styles.thumbnailContainer}>
@@ -62,7 +60,9 @@ export default function Episode({ episode }: EpisodeProps) {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: [],
+    paths: [
+      { params: { slug: "a-importancia-da-contribuicao-em-open-source" } },
+    ],
     fallback: "blocking",
   };
 };
