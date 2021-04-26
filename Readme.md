@@ -19,6 +19,20 @@ iniciar os estudos em NextJS o que me deixou muito animado.</p>
 </p>
 <br/>
 
+## Imagens do projeto
+
+### Home
+
+<img src="./img/01.png" alt="Imagem do projeto">
+
+### Home
+
+<img src="./img/02.png" alt="Imagem do projeto">
+
+### Tela de seleção de podcast
+
+<img src="./img/03.png" alt="Imagem do projeto">
+
 ## Como installar?
 
 ### Antes de começar você precisará ter instalado em sua máquina o seguite:
